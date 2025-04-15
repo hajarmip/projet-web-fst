@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Enseignant - Création d'Examen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="Header">
+    <img src="ChatGPT_Image_15_avr._2025__16_59_52-removebg-preview(1).png" class="logo" style="height: 80px; width: 100px;" />
+    <nav>
+      <i>ESPACE ENSEIGNANT</i>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Création d'examen -->
+    <section class="kolxi" id="creation-examen">
+      <h2>Création d'un Examen</h2>
+      <form id="form-examen">
+        <label>Titre : <input type="text" name="titre" required></label>
+        <label>Description : <textarea name="description" required></textarea></label>
+        <label>Public ciblé : <input type="text" name="public" required></label>
+        <button type="submit">Générer l'examen</button>
+      </form>
+      <div id="lien-examen" style="display:none;">
+        <p>Lien généré : <span id="generated-link"></span></p>
+      </div>
+    </section>
+
+    <!-- Ajout de questions -->
+    <section class="kolxi" id="ajout-questions">
+      <h2>Ajout de Questions</h2>
+      <label>Type de question :
+        <select id="type-question">
+          <option value="directe">Question Directe</option>
+          <option value="qcm">QCM</option>
+        </select>
+      </label>
+
+      <form id="form-question">
+        <label>Énoncé : <textarea name="enonce" required></textarea></label>
+        <label>Joindre un fichier : <input type="file" name="media"></label>
+
+        <div id="directe-fields">
+          <label>Réponse attendue : <input type="text" name="reponse"></label>
+          <label>Taux de tolérance (%) : <input type="number" name="tolerance" value="0"></label>
+        </div>
+
+        <div id="qcm-fields" style="display:none;">
+          <label>Options (séparées par ;) : <input type="text" name="options"></label>
+          <label>Bonnes réponses (ex: 1,3) : <input type="text" name="bonnes_reponses"></label>
+        </div>
+
+        <label>Note attribuée : <input type="number" name="note" required></label>
+        <label>Durée  : <input type="number" name="duree" required></label>
+
+        <button type="submit">Ajouter la question</button>
+      </form>
+
+      <ul id="liste-questions"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
