@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .main-header {
+    background-image: url('background.jpg'); /* سمي الصورة ديالك هكذا أو بدّل الاسم هنا */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    color: white;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* ظل خفيف باش يبان النص مزيان */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .menu a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffd700;
+  }
+  
+  .btn-enter {
+    background-color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn-enter:hover {
+    background-color: #45a049;
+  }
