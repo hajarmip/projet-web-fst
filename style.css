@@ -1,75 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
+/* Styles communs */
+* {
     margin: 0;
     padding: 0;
-    background-color: white;
-  }
-  
-  #Header {
+    box-sizing: border-box;
+}
+
+/* Style pour le body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; /* Fond blanc */
+}
+
+/* Styles pour le header principal */
+.main-header {
+    background-image: url('background.jpg'); /* Remplace le nom de l'image ici */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    color: white; /* Couleur du texte */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Ombre légère pour faire ressortir le texte */
+    width: 100%;
+    height: 100%;
+}
+
+/* Conteneur central */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
-    background: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-    height: 40px;
-  }
-  
-  .logo {
-    background: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    background: rgb(249, 250, 247);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .kolxi {
-    color: #1a3a29;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input, textarea, select, button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #fffdfd;
-    box-sizing: border-box;
-  }
-  
-  button {
+    padding: 0 30px;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffd700; /* Couleur dorée au survol */
+}
+
+/* Bouton d'entrée */
+.btn-enter {
+    background-color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-enter:hover {
+    background-color: #45a049; /* Couleur plus foncée au survol */
+}
+
+/* Autres styles (pour boutons, sections, etc.) */
+button {
     background-color: #80b673;
     color: rgb(8, 16, 11);
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #246b44;
-  }
-  
-  #liste-questions {
+}
+
+button:hover {
+    background-color: #246b44; /* Couleur plus foncée au survol */
+}
+
+/* Liste des éléments */
+#liste-questions {
     list-style-type: none;
     padding: 0;
-  }
-  
-  #liste-questions li {
+}
+
+#liste-questions li {
     background-color: #f0f0f0;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
-  }
-  
+}
