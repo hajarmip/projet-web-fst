@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corps */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Barre supérieure */
+  .topbar {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    color: #2e7d4f;
+  }
+  
+  .btn-info {
+    background-color: #2e7d4f;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-info:hover {
+    background-color: #256b41;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid #2e7d4f;
+  }
+  
+  .section h2 {
+    color: #2e7d4f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .section {
+      padding: 20px;
+    }
+  
+    .page-title {
+      font-size: 20px;
+    }
+  }
+  

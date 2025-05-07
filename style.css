@@ -10,145 +10,75 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8fff9;
   color: #333;
+  padding: 20px;
 }
 
-/* Barre du haut */
-.topbar {
-  background-color: #ffffff;
-  padding: 12px 24px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.bar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.left, .center, .right {
-  flex: 1;
-  text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-
-.page-title {
-  font-size: 24px;
+h2, h3 {
   color: #2e7d4f;
 }
 
-.logo {
-  height: 40px;
+/* Inputs et boutons */
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
 
-/* Boutons */
-.btn-info, .btn-submit {
+textarea {
+  resize: vertical;
+}
+
+button {
   background-color: #2e7d4f;
   color: white;
-  padding: 8px 16px;
   border: none;
-  border-radius: 14px;
-  font-size: 14px;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border-radius: 14px;
 }
 
-.btn-info:hover, .btn-submit:hover {
+button:hover {
   background-color: #256b41;
 }
 
-/* Contenu principal */
-.main-content {
-  padding: 50px;
-}
-
-/* Section formulaire */
-.section {
+/* Questions ajoutées */
+.question {
   background-color: #ffffff;
-  padding: 20px 30px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.section h2 {
-  margin-bottom: 20px;
-  color: #2e7d4f;
-}
-
-/* Champs */
-form label {
-  display: block;
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="file"],
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-/* Liste des questions */
-#liste-questions {
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-#liste-questions li {
-  background-color: #e7f4ea;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-}
-
-/* Bloc lien généré */
-#lien-examen {
-  background-color: #e0f5e9;
-  padding: 12px;
-  border-left: 4px solid #2e7d4f;
+  border: 1px solid #cde4d4;
+  border-left: 5px solid #2e7d4f;
+  padding: 15px;
   margin-top: 15px;
   border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-/* Page À propos */
-.apropos {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+.option {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.apropos h2 {
+/* Lien généré */
+#examLink {
   color: #2e7d4f;
-  margin-bottom: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #e0f5e9;
+  padding: 8px;
+  border-radius: 6px;
+  border-left: 4px solid #2e7d4f;
 }
 
-.apropos ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.apropos p {
-  line-height: 1.6;
+/* Responsivité */
+@media (max-width: 600px) {
+  input, textarea, select, button {
+    font-size: 13px;
+  }
 }

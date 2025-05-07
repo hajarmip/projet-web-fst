@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Examora - Espace Enseignant</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="creer_examen.css"/>
 </head>
 <body>
 
@@ -23,35 +23,16 @@
     </div>
   </header>
 
-  <!-- Contenu principal -->
-  <main class="main-content">
+<body>  
+  <h2>Création d'Examen</h2>
 
-    <!-- Création d'examen -->
-    <section class="section">
-      <h2>Créer un Examen</h2>
-      <form id="form-examen">
-        <label for="titre">Titre :
-          <input type="text" id="titre" required />
-        </label>
-        <label for="description">Description :
-          <textarea id="description" required></textarea>
-        </label>
-        <label for="public">Public ciblé :
-          <input type="text" id="public" required />
-        </label>
-        <label for="nb-questions">Nombre de questions :
-          <input type="number" id="nb-questions" required />
-        </label>
-        <a href="ajout_qst.html" class="btn-info">généré l'examen</a>
-      </div>
-      </form>
-      <div id="lien-examen" style="display: none;">
-        <p>Lien généré : <span id="generated-link"></span></p>
-      </div>
-      
-    </section>
-    
+  <input type="text" id="titre" placeholder="Titre de l'examen">
+  <textarea id="description" placeholder="Description"></textarea>
+  <input type="text" id="public" placeholder="Public ciblé">
+  <button onclick="genererLien()">Générer le lien</button>
 
+  <p class="link" id="lienGenere"></p>
+ <a href="ajout_qst.html" class="btn-info">généré l'examen</a>
   <script src="script.js"></script>
 </body>
-</html
+</html>
