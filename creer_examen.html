@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examora - Espace Enseignant</title>
+  <link rel="stylesheet" href="creer_examen.css"/>
+</head>
+<body>
+
+  <!-- Barre supérieure -->
+  <header class="topbar">
+    <div class="bar-container">
+      <div class="left">
+        <img src="ChatGPT_Image_15_avr._2025__16_59_52-removebg-preview(1).png" alt="Logo Examora" class="logo" />
+      </div>
+      <div class="center">
+        <h1 class="page-title">Espace Enseignant</h1>
+      </div>
+      <div class="right">
+        <a href="apropos.html" class="btn-info">À propos</a>
+      </div>
+    </div>
+  </header>
+
+<body>  
+  <h2>Création d'Examen</h2>
+
+  <input type="text" id="titre" placeholder="Titre de l'examen">
+  <textarea id="description" placeholder="Description"></textarea>
+  <input type="text" id="public" placeholder="Public ciblé">
+  <button onclick="genererLien()">Générer le lien</button>
+
+  <p class="link" id="lienGenere"></p>
+ <a href="ajout_qst.html" class="btn-info">généré l'examen</a>
+  <script src="script.js"></script>
+</body>
+</html>

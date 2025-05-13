@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps général */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fff9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left, .center, .right {
+  flex: 1;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.page-title {
+  font-size: 24px;
+  color: #2e7d4f;
+  font-weight: bold;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Champs de formulaire */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+/* Boutons */
+button, .btn-info {
+  background-color: #2e7d4f;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.03s;
+}
+
+button:hover, .btn-info:hover {
+  background-color: #256b41;
+}
+
+/* Lien généré */
+#examLink {
+  display: inline-block;
+  background-color: #e0f5e9;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #f8f8f8;
+  border-radius: 6px;
+  color: #2e7d4f;
+  font-weight: bold;
+}
+
+/* Titres */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #2e7d4f;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .bar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .center, .left, .right {
+    text-align: left;
+  }
+}
